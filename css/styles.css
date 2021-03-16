@@ -1,0 +1,253 @@
+:root {
+  --subtittle-text-color: #757575;
+  --link-color: #2196f3;
+  --site-color: #212121;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  background: #ffffff;
+  font-style: normal;
+  color: #757575;
+}
+ul {
+  list-style: none;
+}
+
+/* Шапка */
+.page-header {
+  background: #ffffff;
+}
+/* WebStudio */
+
+a {
+  text-decoration: none;
+}
+.web {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: var(--link-color);
+}
+.studio {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #000000;
+}
+/* footer Studio */
+.studi-o {
+  font-family: Raleway;
+  font-size: 26px;
+  line-height: 1.19;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+/* ссылки на страници*/
+.link {
+  text-decoration: none;
+  font-weight: 500;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  color: #212121;
+}
+/* выделяет профиль на котором сидит юзер */
+.link.current {
+  color: var(--link-color);
+}
+.link:hover,
+.link:focus,
+.link-mail:focus,
+.link-mail:hover {
+  color: var(--link-color);
+}
+/* contacts */
+.link-mail,
+.link-tel {
+  text-decoration: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.02em;
+  font-weight: 500;
+
+  color: var(--subtittle-text-color);
+}
+
+.link-tel:focus,
+.link-tel:hover {
+  color: var(--link-color);
+}
+
+/* Эффективные решения - Slogan */
+.slogan {
+  background: #2f303a;
+}
+.slogan-text {
+  font-weight: 900;
+  font-size: 44px;
+  line-height: 1.36;
+  text-align: center;
+  letter-spacing: 0.06em;
+  text-transform: uppercase;
+  color: #ffffff;
+}
+/* заказ услуг кнопка */
+.btn {
+  width: 200px;
+  height: 50px;
+  font-family: inherit;
+  border: none;
+  outline: none;
+  cursor: pointer;
+  background: var(--link-color);
+}
+.btn:focus,
+.btn:hover {
+  background-color: #188ce8;
+}
+/* цвет текста в кнопке */
+.btn-button {
+  color: #ffffff;
+}
+/* основные этапы скрыть!!!!!  */
+/* visually-hidden  утилита для убирания текста */
+.visually-hidden {
+  position: absolute !important;
+  clip: rect(1px 1px 1px 1px);
+  clip: rect(1px, 1px, 1px, 1px);
+  padding: 0 !important;
+  border: 0 !important;
+  height: 1px !important;
+  width: 1px !important;
+  overflow: hidden;
+}
+
+/* Преймущества подзаголовки- subtitle */
+.subtitle {
+  list-style: none;
+  font-size: 14px;
+  line-height: 1.14;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+  color: #212121;
+}
+.subtitle-text {
+  font-weight: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: var(--subtittle-text-color);
+}
+
+/* Чем занимаемся */
+.section-title {
+  font-weight: bold;
+  font-size: 36px;
+  line-height: 1.16;
+  text-align: center;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* наша команда, имена*/
+.section-command {
+  background: #f5f4fa;
+}
+.section-caption {
+  font-style: normal;
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #212121;
+}
+/* Описание работы desc */
+.section-desc {
+  font-size: 16px;
+  line-height: 1.9;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
+
+/* Подвал */
+.footer {
+  left: -1px;
+  top: 2097px;
+  background: #2f303a;
+}
+.adress-text {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: #ffffff;
+}
+.adress-text:hover {
+  color: aquamarine;
+}
+.adress-mail {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+.adress-tel {
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+}
+
+.adress-mail:hover,
+.adress-mail:focus,
+.adress-tel:focus,
+.adress-tel:hover {
+  color: var(--link-color);
+}
+
+/* Portfolio!!!!!!!!!!!!!! */
+
+.button {
+  text-align: center;
+  font-family: inherit;
+  box-shadow: none;
+  border: none;
+  cursor: pointer;
+  color: black;
+  background-color: #f5f4fa;
+  border-radius: 4px;
+}
+
+.button-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 1.62;
+  text-align: center;
+  letter-spacing: 0.03em;
+}
+.button:focus,
+.button:hover {
+  outline: none;
+  border: none;
+  background-color: var(--link-color);
+  color: #ffffff;
+}
+.contents {
+  background-color: #ffffff;
+}
+.contents-name {
+  font-size: 18px;
+  line-height: 2;
+  letter-spacing: 0.06em;
+  color: #212121;
+}
+.contents-merch {
+  font-size: 16px;
+  line-height: 1.87;
+  letter-spacing: 0.03em;
+  color: #757575;
+}
