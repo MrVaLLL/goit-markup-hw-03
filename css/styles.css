@@ -17,13 +17,15 @@ html {
 
 body {
   font-family: 'Roboto', sans-serif;
-  background: #ffffff;
+  background-color: #ffffff;
   font-style: normal;
   color: #757575;
 }
 
 ul {
   list-style: none;
+  margin: 0;
+  padding: 0;
 }
 
 a {
@@ -37,8 +39,8 @@ h4,
 h5,
 h6,
 p {
-  margin-top: 0;
-  margin-bottom: 0;
+  margin: 0;
+  padding: 0;
 }
 
 img {
@@ -62,9 +64,11 @@ img {
 
 /* Шапка */
 .page-header {
-  background: #ffffff;
+  height: 80px;
+  background-color: #ffffff;
   align-items: center;
   border-bottom: 1px solid #ececec;
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .div-navigation {
@@ -78,15 +82,18 @@ img {
 
 .menu {
   align-items: center;
+  margin-right: 0;
   display: flex;
 }
+
 /* WebStudio */
 
-.logo {
+.nav .logo {
   display: inline-block;
   vertical-align: middle;
   margin-bottom: 25px;
   margin-top: 25px;
+  margin-right: 94px;
 }
 
 .web {
@@ -116,7 +123,7 @@ img {
 
 /* ссылки на страници*/
 .link {
-  padding-left: 50px;
+  padding-right: 50px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
@@ -149,8 +156,11 @@ img {
 }
 
 .link-mail-tel {
-  display: flex;
+  display: inline-flex;
   margin-left: auto;
+}
+.mail-tel {
+  margin-left: 50px;
 }
 
 .link-tel:focus,
@@ -160,7 +170,7 @@ img {
 
 /* SLOGAN */
 .slogan {
-  background: #2f303a;
+  background-color: #2f303a;
   text-align: center;
   padding-top: 200px;
   padding-bottom: 200px;
@@ -182,12 +192,12 @@ img {
   display: inline-block;
   border-radius: 4px;
   min-width: 200px;
-  min-height: 50px;
+  padding: 10px 32px;
   font-family: inherit;
   border: none;
   outline: none;
   cursor: pointer;
-  background: var(--link-color);
+  background-color: var(--link-color);
   box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
 }
 
@@ -196,6 +206,13 @@ img {
   background-color: #188ce8;
 }
 .btn-button {
+  font-weight: bold;
+  font-size: 16px;
+  line-height: 30px;
+  display: flex;
+  align-items: center;
+  text-align: center;
+  letter-spacing: 0.06em;
   color: #ffffff;
 }
 
@@ -216,14 +233,12 @@ img {
 .section-img {
   justify-content: space-between;
   display: flex;
-  max-width: 100%;
+}
+.section-foto:not(:last-child) {
+  margin-right: 30px;
 }
 
 /* Преймущества подзаголовки- subtitle */
-.no-padding {
-  padding-top: 0;
-  padding-bottom: 0;
-}
 
 .section-subtitle {
   display: flex;
@@ -270,13 +285,19 @@ img {
 /* наша команда, имена*/
 .section-people {
   justify-content: space-between;
-  margin-left: auto;
-  margin-right: auto;
   display: flex;
+}
+.command-item {
+  text-align: center;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
+}
+.command-text {
+  padding: 30px 60px;
 }
 
 .section-command {
-  background: #f5f4fa;
+  background-color: #f5f4fa;
 }
 
 .section-caption {
@@ -301,7 +322,7 @@ img {
 .footer {
   height: 252px;
   left: -1px;
-  background: #2f303a;
+  background-color: #2f303a;
 }
 
 .webstudi-o {
@@ -340,6 +361,7 @@ img {
 /* Portfolio!!!!!!!!!!!!!! */
 
 .button {
+  margin-left: 8px;
   height: 38px;
   display: inline;
   text-align: center;
@@ -390,7 +412,9 @@ img {
   flex-basis: calc(100% / 3 - var(--card-set-gap));
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  outline: 1px solid;
+  border: 1px solid #eeeeee;
+  box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
+  border-radius: 0px 0px 4px 4px;
 }
 
 .card-div {
@@ -402,14 +426,13 @@ img {
   display: block;
   max-width: 100%;
   height: auto;
-  filter: drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25)), drop-shadow(0px 4px 4px rgba(0, 0, 0, 0.25));
+  box-shadow: 0px 1px 3px rgba(150, 141, 141, 0.12);
+  margin-bottom: 20px;
 }
 
 .contents {
   padding: 0;
-  margin: 0;
   margin-bottom: 94px;
-
   background-color: #ffffff;
 }
 
@@ -418,6 +441,7 @@ img {
   line-height: 2;
   letter-spacing: 0.06em;
   color: #212121;
+  margin-bottom: 4px;
 }
 
 .contents-merch {
@@ -425,4 +449,5 @@ img {
   line-height: 1.87;
   letter-spacing: 0.03em;
   color: #757575;
+  margin-bottom: 10px;
 }

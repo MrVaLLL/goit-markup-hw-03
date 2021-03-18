@@ -37,10 +37,10 @@
         </nav>
 
         <ul class="link-mail-tel">
-          <li>
+          <li class="mail-tel">
             <a class="link-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
           </li>
-          <li>
+          <li class="mail-tel">
             <a class="link-tel" href="tel:+380961111111">+38 096 111 11 11</a>
           </li>
         </ul>
@@ -52,7 +52,7 @@
 
       <section class="section slogan">
         <div class="container">
-          <h1 class="slogan-text">Эффективные решения<br />для вашего бизнеса</h1>
+          <h1 class="slogan-text">Эффективные решения </br> для вашего бизнеса</h1>
           <button class="btn" type="button"><span class="btn-button">Заказать услугу</span></button>
         </div>
       </section>
@@ -95,15 +95,16 @@
       <section class="section section-working">
         <div class="container">
           <h2 class="section-title">Чем мы занимаемся</h2>
+          <!-- Изображение занятий -->
           <ul class="section-img">
             <li class="section-foto">
-              <img src="./images/box_1.jpg" width="370" alt="компьютер" />
+              <img src="./images/box_1.jpg" width="370" height="294" alt="компьютер" />
             </li>
             <li class="section-foto">
-              <img src="./images/box_2.jpg" width="370" alt="телефон" />
+              <img src="./images/box_2.jpg" width="370" height="294" alt="телефон" />
             </li>
             <li class="section-foto">
-              <img src="./images/box_3.jpg" width="370" alt="планшет" />
+              <img src="./images/box_3.jpg" width="370" height="294" alt="планшет" />
             </li>
           </ul>
         </div>
@@ -112,31 +113,35 @@
       <section class="section section-command">
         <div class="container">
           <h2 class="section-title">Наша команда</h2>
+          <!-- секция людей -->
           <ul class="section-people">
-            <li class="">
-              <img src="./images/people/img1.jpg" alt="Игорь Демьяненко" width="270" />
-              <div>
+            <li class="command-item">
+              <img class="command-img" src="./images/people/img1.jpg" alt="Игорь Демьяненко" width="270" />
+              <div class="command-text">
                 <h3 class="section-caption">Игорь Демьяненко</h3>
                 <p class="section-desc">Product Designer</p>
               </div>
             </li>
-            <li>
-              <img src="./images/people/img2.jpg" alt="Ольга Репина" width="270" />
-              <div>
+
+            <li class="command-item">
+              <img class="command-img" src="./images/people/img2.jpg" alt="Ольга Репина" width="270" />
+              <div class="command-text">
                 <h3 class="section-caption">Ольга Репина</h3>
                 <p class="section-desc">Frontend Developer</p>
               </div>
             </li>
-            <li>
-              <img src="./images/people/img3.jpg" alt="Николай Тарасов" width="270" />
-              <div>
+
+            <li class="command-item">
+              <img class="command-img" src="./images/people/img3.jpg" alt="Николай Тарасов" width="270" />
+              <div class="command-text">
                 <h3 class="section-caption">Николай Тарасов</h3>
                 <p class="section-desc">Marketing</p>
               </div>
             </li>
-            <li>
-              <img src="./images/people/img4.jpg" alt="Михаил Ермаков" width="270" />
-              <div>
+
+            <li class="command-item">
+              <img class="command-img" src="./images/people/img4.jpg" alt="Михаил Ермаков" width="270" />
+              <div class="command-text">
                 <h3 class="section-caption">Михаил Ермаков</h3>
                 <p class="section-desc">UI Designer</p>
               </div>
@@ -146,18 +151,18 @@
       </section>
     </main>
     <!--Подвал-->
-    <footer class="footer no-padding">
+    <footer class="footer">
       <div class="container">
         <a class="webstudi-o" href="./index.html"><span class="web">Web</span><span class="studi-o">Studio</span> </a>
-        <address>
+        <address class="footer-adress">
           <a class="adress-text" href="https://goo.gl/maps/3bDAXwTy5A2F5pWt9" target="_blank" rel="noopener noreferrer">
             г. Киев, пр-т Леси Украинки, 26
           </a>
-          <ul>
-            <li>
+          <ul class="footere-list">
+            <li class="footer-link">
               <a class="adress-mail" href="mailto:info@devstudio.com">info@devstudio.com</a>
             </li>
-            <li>
+            <li class="footer-link>
               <a class="adress-tel" href="tel:+380961111111">+38 096 111 11 11</a>
             </li>
           </ul>
