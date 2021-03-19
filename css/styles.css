@@ -35,9 +35,6 @@ a {
 h1,
 h2,
 h3,
-h4,
-h5,
-h6,
 p {
   margin: 0;
   padding: 0;
@@ -46,6 +43,7 @@ p {
 img {
   display: block;
   max-width: 100%;
+  height: auto;
 }
 
 .section {
@@ -64,11 +62,8 @@ img {
 
 /* Шапка */
 .page-header {
-  height: 80px;
   background-color: #ffffff;
-  align-items: center;
   border-bottom: 1px solid #ececec;
-  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.25);
 }
 
 .div-navigation {
@@ -82,18 +77,15 @@ img {
 
 .menu {
   align-items: center;
-  margin-right: 0;
-  display: flex;
+  display: inline-flex;
 }
 
 /* WebStudio */
 
 .nav .logo {
-  display: inline-block;
-  vertical-align: middle;
-  margin-bottom: 25px;
-  margin-top: 25px;
-  margin-right: 94px;
+  padding-bottom: 24px;
+  padding-top: 24px;
+  padding-right: 94px;
 }
 
 .web {
@@ -177,8 +169,10 @@ img {
 }
 
 .slogan-text {
-  margin-top: 0;
-  padding-bottom: 30px;
+  max-width: 696px;
+  margin-left: auto;
+  margin-right: auto;
+  margin-bottom: 30px;
   font-weight: 900;
   font-size: 44px;
   line-height: 1.36;
@@ -238,15 +232,19 @@ img {
 
 .section-subtitle {
   display: flex;
-  justify-content: space-between;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 
-.sectuion-item:not(:last-child) {
-  margin-right: 30px;
+.sectuion-item {
+  flex-basis: calc((100% - 30px * 4) / 4);
+  margin-left: 30px;
+  margin-top: 30px;
 }
 
 .subtitle {
-  margin-bottom: 10px;
+  padding-bottom: 10px;
   list-style: none;
   font-size: 14px;
   line-height: 1.14;
@@ -269,7 +267,7 @@ img {
 
 /* Чем занимаемся */
 .section-title {
-  margin-bottom: 50px;
+  padding-bottom: 50px;
   font-weight: bold;
   font-size: 36px;
   line-height: 1.16;
@@ -279,21 +277,27 @@ img {
 }
 
 /* наша команда, имена*/
+.section-command {
+  background-color: #f5f4fa;
+  text-align: center;
+}
 .section-people {
-  justify-content: space-between;
   display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+  margin-top: -30px;
 }
 .command-item {
-  text-align: center;
+  margin-left: 30px;
+  margin-top: 30px;
+  flex-basis: calc((100% - 30px * 4) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-.command-text {
-  padding: 30px 60px;
-}
 
-.section-command {
-  background-color: #f5f4fa;
+.command-text {
+  padding: 30px 58px;
+  background-color: #ffffff;
 }
 
 .section-caption {
@@ -316,35 +320,46 @@ img {
 
 /* Подвал */
 .footer {
-  height: 252px;
-  left: -1px;
   background-color: #2f303a;
 }
 
 .webstudi-o {
   display: inline-block;
-  padding-top: 60px;
+  margin-top: 60px;
+  margin-bottom: 30px;
 }
 
 .adress-text {
+  display: inline-block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: #ffffff;
+  padding-bottom: 10px;
 }
 
 .adress-text:hover {
   color: aquamarine;
 }
 
-.adress-mail,
-.adress-tel {
+.adress-mail {
+  display: inline-block;
   font-style: normal;
   font-size: 14px;
   line-height: 1.71;
   letter-spacing: 0.03em;
   color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 10px;
+}
+.adress-tel {
+  display: inline-block;
+  font-style: normal;
+  font-size: 14px;
+  line-height: 1.71;
+  letter-spacing: 0.03em;
+  color: rgba(255, 255, 255, 0.6);
+  padding-bottom: 60px;
 }
 
 .adress-mail:hover,
@@ -398,14 +413,12 @@ img {
 .card-set {
   display: flex;
   flex-wrap: wrap;
-  margin-left: calc(-1 * var(--card-set-gap));
+  margin-left: -30px;
   margin-top: -30px;
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
-  padding: 0;
 }
 
-.card-set > .item {
-  flex-basis: calc(100% / 3 - var(--card-set-gap));
+.item {
+  flex-basis: calc((100% / 3 * 30px) / 3);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
   border: 1px solid #eeeeee;
