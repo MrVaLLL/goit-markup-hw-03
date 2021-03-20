@@ -76,13 +76,15 @@ img {
 }
 
 .menu {
-  align-items: center;
+  padding: 32px 0;
   display: inline-flex;
 }
-
+.menu-item + .menu-item {
+  margin-left: 50px;
+}
 /* WebStudio */
 
-.nav .logo {
+.logo {
   padding-bottom: 24px;
   padding-top: 24px;
   padding-right: 94px;
@@ -115,13 +117,15 @@ img {
 
 /* ссылки на страници*/
 .link {
-  padding-right: 50px;
   text-decoration: none;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
+}
+.link:not(:last-child) {
+  margin-right: 50px;
 }
 
 /* выделяет профиль на котором сидит юзер */
@@ -206,7 +210,6 @@ img {
   color: #ffffff;
 }
 
-/* основные этапы скрыть!!!!!  */
 /* visually-hidden  утилита для убирания текста */
 .visually-hidden {
   position: absolute !important;
@@ -220,13 +223,6 @@ img {
 }
 
 /* ЧЕМ ЗАНИМАЕМСЯ */
-.section-img {
-  justify-content: space-between;
-  display: flex;
-}
-.section-foto:not(:last-child) {
-  margin-right: 30px;
-}
 
 /* Преймущества подзаголовки- subtitle */
 
@@ -234,13 +230,11 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
 }
 
 .sectuion-item {
   flex-basis: calc((100% - 30px * 4) / 4);
   margin-left: 30px;
-  margin-top: 30px;
 }
 
 .subtitle {
@@ -266,6 +260,16 @@ img {
 }
 
 /* Чем занимаемся */
+.section-img {
+  display: flex;
+  flex-wrap: wrap;
+  margin-left: -30px;
+}
+.section-foto {
+  margin-left: 30px;
+  flex-basis: calc((100% - 30px * 3) / 3);
+}
+
 .section-title {
   padding-bottom: 50px;
   font-weight: bold;
@@ -285,16 +289,14 @@ img {
   display: flex;
   flex-wrap: wrap;
   margin-left: -30px;
-  margin-top: -30px;
 }
 .command-item {
+  overflow: hidden;
   margin-left: 30px;
-  margin-top: 30px;
   flex-basis: calc((100% - 30px * 4) / 4);
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
-
 .command-text {
   padding: 30px 58px;
   background-color: #ffffff;
@@ -372,10 +374,12 @@ img {
 /* Portfolio!!!!!!!!!!!!!! */
 
 .button {
-  margin-left: 8px;
+  display: flex;
+  justify-content: center;
+  padding: 6px 22px;
   height: 38px;
   display: inline;
-  text-align: center;
+
   font-family: inherit;
   box-shadow: none;
   border: none;
@@ -383,15 +387,15 @@ img {
   color: black;
   background-color: #f5f4fa;
   border-radius: 4px;
+  margin-left: 8px;
 }
 
 .buttons {
-  padding-left: 0;
-  padding-right: 0;
   padding-top: 94px;
-  padding-bottom: 34px;
-  justify-content: center;
+
   display: flex;
+  justify-content: center;
+  margin-bottom: 50px;
 }
 
 .button-link {
@@ -418,10 +422,10 @@ img {
 }
 
 .item {
-  flex-basis: calc((100% / 3 * 30px) / 3);
+  flex-basis: calc((100% / - 30px * 1) / 3);
   margin-left: var(--card-set-gap);
   margin-top: var(--card-set-gap);
-  border: 1px solid #eeeeee;
+
   box-shadow: 0px 1px 3px rgba(0, 0, 0, 0.12), 0px 1px 1px rgba(0, 0, 0, 0.14), 0px 2px 1px rgba(0, 0, 0, 0.2);
   border-radius: 0px 0px 4px 4px;
 }
