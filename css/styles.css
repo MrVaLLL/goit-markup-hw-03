@@ -87,7 +87,6 @@ img {
 
 .logo {
   padding: 24px 0;
-
   margin-right: 94px;
 }
 
@@ -118,16 +117,15 @@ img {
 
 /* ссылки на страници*/
 .link {
-  padding: 32px 50px;
-  text-decoration: none;
+  padding: 32px 0;
   font-weight: 500;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
   color: #212121;
 }
-.link {
-  padding-left: 50px;
+.menu .menu-item + .menu-item {
+  margin-left: 50px;
 }
 
 /* выделяет профиль на котором сидит юзер */
@@ -145,7 +143,6 @@ img {
 
 .link-mail,
 .link-tel {
-  text-decoration: none;
   font-size: 14px;
   line-height: 1.14;
   letter-spacing: 0.02em;
@@ -154,10 +151,11 @@ img {
 }
 
 .link-mail-tel {
+  padding: 32px 0;
   display: inline-flex;
   margin-left: auto;
 }
-.mail-tel {
+.link-tel {
   margin-left: 50px;
 }
 
